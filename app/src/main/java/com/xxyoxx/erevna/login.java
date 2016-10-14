@@ -1,0 +1,165 @@
+package com.xxyoxx.erevna;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
+import android.os.StrictMode;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import org.apache.http.HttpClientConnection;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+public class login extends Activity {
+
+    EditText email, password;
+    Button register, sign_user, sign_ngo;
+    String result;
+
+    InputStream is;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        StrictMode.ThreadPolicy tp = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(tp);
+
+        sign_user = (Button) findViewById(R.id.sign_in_user);
+        sign_ngo = (Button) findViewById(R.id.sign_in_ngo);
+        register = (Button) findViewById(R.id.register);
+
+        email = (EditText) findViewById(R.id.email);
+        password = (EditText) findViewById(R.id.password);
+
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent rg = new Intent("com.xxyoxx.erevna.login_two");
+                startActivity(rg);
+            }
+        });
+
+        sign_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String eaddr = email.getText().toString();
+                String pass = password.getText().toString();
+
+                ArrayList<NameValuePair> ver = new ArrayList<NameValuePair>();
+                ver.add(new BasicNameValuePair("email", eaddr));
+                ver.add(new BasicNameValuePair("pass", pass));
+
+                try {
+                    HttpClient htc = new DefaultHttpClient();
+                    HttpPost hp = new HttpPost("http://www.xxyoxx.esy.es/verify.php");
+                    hp.setEntity(new UrlEncodedFormEntity(ver));
+                    HttpResponse hr = htc.execute(hp);
+                    HttpEntity ent = hr.getEntity();
+                    is = ent.getContent();
+
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"), 8);
+                    StringBuilder sb = new StringBuilder();
+
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        sb.append(line + "\n");
+                    }
+                    result = sb.toString();
+
+                    //Snackbar.make(v,"Successful!",Snackbar.LENGTH_SHORT).show();
+
+                    String s = result.trim();
+                    if (s.equalsIgnoreCase("success")) {
+                        SharedPreferences sp = getSharedPreferences("mypref", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor ed = sp.edit();
+                        ed.putString("email", eaddr);
+                        ed.apply();
+                        Intent con = new Intent("com.xxyoxx.erevna.userscreen");
+                        con.putExtra("uname", eaddr);
+                        startActivity(con);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Invalid User Name or Password", Toast.LENGTH_LONG).show();
+                    }
+                } catch (Exception reg) {
+                    Toast.makeText(getApplicationContext(), reg + "", Toast.LENGTH_LONG).show();
+                }
+
+
+            }
+        });
+
+        sign_ngo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String eaddr = email.getText().toString();
+                String pass = password.getText().toString();
+
+                ArrayList<NameValuePair> ver = new ArrayList<NameValuePair>();
+                ver.add(new BasicNameValuePair("email", eaddr));
+                ver.add(new BasicNameValuePair("pass", pass));
+
+                try {
+                    HttpClient htc = new DefaultHttpClient();
+                    HttpPost hp = new HttpPost("http://www.xxyoxx.esy.es/verifyngo.php");
+                    hp.setEntity(new UrlEncodedFormEntity(ver));
+                    HttpResponse hr = htc.execute(hp);
+                    HttpEntity ent = hr.getEntity();
+                    is = ent.getContent();
+
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"), 8);
+                    StringBuilder sb = new StringBuilder();
+
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        sb.append(line + "\n");
+                    }
+                    result = sb.toString();
+
+                    //Snackbar.make(v,"Successful!",Snackbar.LENGTH_SHORT).show();
+
+                    String s = result.trim();
+                    if (s.equalsIgnoreCase("success")) {
+                        SharedPreferences sp = getSharedPreferences("mypref", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor ed = sp.edit();
+                        ed.putString("email", eaddr);
+                        ed.apply();
+                        Intent con = new Intent("com.xxyoxx.erevna.ngoscreen");
+                        con.putExtra("uname", eaddr);
+                        startActivity(con);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Invalid User Name or Password", Toast.LENGTH_LONG).show();
+                    }
+                } catch (Exception reg) {
+                    Toast.makeText(getApplicationContext(), reg + "", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+    }
+
+    public void sign_ind(View s) {
+
+    }
+
+}

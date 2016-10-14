@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="93a0248fe0524b4fa2d16f5f7c3cff8452796454">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.6.0_d592c7c799c92d6d0353e1102551b05645f1e133\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.6.1_48c2129c4a223c6431bf0bb60cff202c2d937985\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-auth\0.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8ac09931704b91e7b4d281f5e34b3b006b628c22">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-auth-0.6.0_279e9c2e5f67c5c0024f63e09ee168b61ba3f4f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-database\0.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ebf985be182798e6322fee8fe437b14ee6bb8609">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-database-0.6.0_d162b7080f7982bf1bd8aedb11c888f921c7cec7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-customtabs-23.4.0_f064887d6a5318d538095df2566b5c9eecd3f64d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\SDK\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0_7ddef70a1539259fc7b752942d0043d52cb792dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Amiteshwar Sidhu\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_043048e2b732eabe8f37d1ded99e6ccf8b2c9be2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.6.1_4b2c8f2354166288bc36e91e24aeb315575c18b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui\0.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="16226703bab55ec42457666213cd3503799d36a8">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-0.6.0_4f64967ee78ae3365ad831dc88499af65e23b1c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_253294b36c3430be73d0287e8407760a8afd7d90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.1_3841f635219308afa91b4b52d466d3cfbbfcf9de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0_da8b9a628f4ce77057341781eaff9983e5ac8230\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7a343e17f154f513a09c12946fae0f172be079ec">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.6.0_52ca38b08b4cf9d7a9bc6965fc5d8df0c49b1a29\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.6.1_7521b23fc256295449b3b6193819038574c698a2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Amiteshwar Sidhu\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_57214ce13922beb9943ad6322be47443c898b500\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_dec6b6ff6f3deb1270414a4c628510ab0f153bff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.14.1_811b9be900d0021e5f5b62c541ade7917e73d79a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Amiteshwar Sidhu\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_07c05589058dd52ce590bcae744bb72d7562f2df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_53c18d26356d3d4b2726ddfdc94511bcd95698b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="457398ff2ee635482bae8ace789ca97dd6104362">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_94d24f2ebd3c0ef1bddca49fdae0cc73fde54f01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f861fce2e9fa167e7fe8d8558cf2cbb910b9fb34">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.6.0_89ed957009c99cbb4ad936969f8ad416b907f05d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.6.1_f6dbbde3e0f323349cb64c8bc34d6a1e0983027b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\palette-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="51518e8e8f97c314a243d9def0ded91d385b6a1e">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-23.4.0_3e1f6a62c3a45d5532b269b9beb3783d0cfe0c58\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_641df1486a148232dca9c3a076de8654f9c7e441\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.6.1_bb48995c47dc33930caf4cb34215066fc0b7b860\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.6.1_059565c4bd173fd6ce3f53d6abbb28db950e5c7e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_eeae7ca1fb86d610b6e61fcf5f154f1c1e9e5fd7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Amiteshwar Sidhu\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_25d57ce4daca73dd71185faac411e7459b7962ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-storage\0.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3c433e48557e476290f45fb6cb568d1a103c9978">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-storage-0.6.0_b4dfe218b6b205271198f2db237b8c67fa53c304\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_01474d48eca462e28784d13d72e4b87c3415e1e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_450bf189f952fed113e92bd1a01c52887b1c8ae6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1f4bb2577a30d0b3268fed038ed59230709ad593">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.6.0_2956aa5c16189b085f3f05eb7c7bee19b9727ccf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="03688fe0d13c15a8822bf70a7020818d812e4eeb">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_87e14fd7078f665023847e69681a4e03633a8a5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.6.1_f1ec893662cad77c9644e24876d6b7dae41c9c91\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="580fa73d5bf63ffd04b9d66d0e75a2ed21842702">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.6.0_fe0433a02030ddcef89db530f96263a9d854d307\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0ef21408e3142ffbfbd4a7ec1762c3325c6c386c">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.6.0_e4811dfba82baac1d74ff277773cc1e3ae0b0748\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.6.1_5f9e6e780328f6cb4c7eea7774e9050cd6483105\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Workspace\HCL\Erevna\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.6.1_8d5a6d0fd84de81b8a79b1f1f5902f686bae27ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Amiteshwar Sidhu\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.3\e876a79d561e5c6207b78d347e198c8c4531a5e5\httpcore-4.4.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e876a79d561e5c6207b78d347e198c8c4531a5e5">
+        <dex dex="E:\Workspace\HCL\Erevna\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpcore-4.4.3_113709b6b15d5392f12848f52e2746023d399802\classes.dex" />
+    </item>
+
+</items>

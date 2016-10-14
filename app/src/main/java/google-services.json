@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "895606215002",
+    "firebase_url": "https://erevna-524d8.firebaseio.com",
+    "project_id": "erevna-524d8",
+    "storage_bucket": "erevna-524d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895606215002:android:b6678de4f42cb390",
+        "android_client_info": {
+          "package_name": "com.xxyoxx.erevna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895606215002-k4brl7721f44u48kj9vavh0rh9eilhmp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xxyoxx.erevna",
+            "certificate_hash": "CEE6A5F38CAE0C0BF3AB674BBF7AF9AE39B59ED1"
+          }
+        },
+        {
+          "client_id": "895606215002-mgb6m9ac8jcenvg7thgijl94076dn4pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAaHbd3CN-e64Z2Tw0ooGPRo9d7PqHCTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895606215002-mgb6m9ac8jcenvg7thgijl94076dn4pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
