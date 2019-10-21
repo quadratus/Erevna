@@ -4,17 +4,13 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.StrictMode;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.apache.http.HttpClientConnection;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -31,11 +27,11 @@ import java.util.ArrayList;
 
 public class login extends Activity {
 
-    EditText email, password;
-    Button register, sign_user, sign_ngo;
-    String result;
+    private EditText email, password;
+    private Button register, user_sign_in, ngo_sign_in;
+    private String result;
 
-    InputStream is;
+    private InputStream is;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,36 +40,37 @@ public class login extends Activity {
         StrictMode.ThreadPolicy tp = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(tp);
 
-        sign_user = (Button) findViewById(R.id.sign_in_user);
-        sign_ngo = (Button) findViewById(R.id.sign_in_ngo);
-        register = (Button) findViewById(R.id.register);
+        user_sign_in = findViewById(R.id.sign_in_user);
+        ngo_sign_in = findViewById(R.id.sign_in_ngo);
+        register =  findViewById(R.id.register);
 
-        email = (EditText) findViewById(R.id.email);
-        password = (EditText) findViewById(R.id.password);
-
+        email = findViewById(R.id.email);
+        password = findViewById(R.id.password);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent rg = new Intent("com.xxyoxx.erevna.login_two");
-                startActivity(rg);
+//                Intent rg = new Intent("com.xxyoxx.erevna.register_user");
+                Intent login_intent = new Intent(v.getContext(), register_user.class);
+                startActivity(login_intent);
+
             }
         });
 
-        sign_user.setOnClickListener(new View.OnClickListener() {
+        user_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String eaddr = email.getText().toString();
                 String pass = password.getText().toString();
 
-                ArrayList<NameValuePair> ver = new ArrayList<NameValuePair>();
-                ver.add(new BasicNameValuePair("email", eaddr));
-                ver.add(new BasicNameValuePair("pass", pass));
+                ArrayList<NameValuePair> authentication_list = new ArrayList<NameValuePair>();
+                authentication_list.add(new BasicNameValuePair("email", eaddr));
+                authentication_list.add(new BasicNameValuePair("pass", pass));
 
                 try {
                     HttpClient htc = new DefaultHttpClient();
                     HttpPost hp = new HttpPost("http://www.xxyoxx.esy.es/verify.php");
-                    hp.setEntity(new UrlEncodedFormEntity(ver));
+                    hp.setEntity(new UrlEncodedFormEntity(authentication_list));
                     HttpResponse hr = htc.execute(hp);
                     HttpEntity ent = hr.getEntity();
                     is = ent.getContent();
@@ -95,11 +92,12 @@ public class login extends Activity {
                         SharedPreferences.Editor ed = sp.edit();
                         ed.putString("email", eaddr);
                         ed.apply();
-                        Intent con = new Intent("com.xxyoxx.erevna.userscreen");
-                        con.putExtra("uname", eaddr);
-                        startActivity(con);
+
+                        Intent user_screen_intent = new Intent(v.getContext(),userscreen.class);
+                        user_screen_intent.putExtra("uname", eaddr);
+                        startActivity(user_screen_intent);
                     } else {
-                        Toast.makeText(getApplicationContext(), "Invalid User Name or Password", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Invalid user name or password", Toast.LENGTH_LONG).show();
                     }
                 } catch (Exception reg) {
                     Toast.makeText(getApplicationContext(), reg + "", Toast.LENGTH_LONG).show();
@@ -109,7 +107,7 @@ public class login extends Activity {
             }
         });
 
-        sign_ngo.setOnClickListener(new View.OnClickListener() {
+        ngo_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String eaddr = email.getText().toString();
@@ -144,11 +142,13 @@ public class login extends Activity {
                         SharedPreferences.Editor ed = sp.edit();
                         ed.putString("email", eaddr);
                         ed.apply();
-                        Intent con = new Intent("com.xxyoxx.erevna.ngoscreen");
-                        con.putExtra("uname", eaddr);
-                        startActivity(con);
+//                        Intent con = new Intent("com.xxyoxx.erevna.ngoscreen");
+                        Intent ngo_screen_intent = new Intent(v.getContext(), ngo_screen.class);
+                        ngo_screen_intent.putExtra("uname", eaddr);
+//                        con.putExtra("uname", eaddr);
+                        startActivity(ngo_screen_intent);
                     } else {
-                        Toast.makeText(getApplicationContext(), "Invalid User Name or Password", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Invalid user name or password", Toast.LENGTH_LONG).show();
                     }
                 } catch (Exception reg) {
                     Toast.makeText(getApplicationContext(), reg + "", Toast.LENGTH_LONG).show();

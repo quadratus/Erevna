@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.xxyoxx.erevna"
-        minSdkVersion 21
-        targetSdkVersion 23
+        minSdkVersion 24
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -25,19 +25,25 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'org.apache.httpcomponents:httpcore:4.4.1'
-    compile 'org.apache.httpcomponents:httpclient:4.5.1'
-    compile 'com.google.firebase:firebase-database:9.6.1'
-    compile 'com.google.firebase:firebase-storage:9.6.1';
-    compile 'com.android.support:cardview-v7:23.0.+'
-    compile 'com.android.support:recyclerview-v7:23.0.+'
-    compile 'com.firebaseui:firebase-ui:0.6.0'
-    compile 'com.android.support:appcompat-v7:22.2.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
+    // Add the Firebase SDK for Google Analytics
 
-    testCompile 'junit:junit:4.12'
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.1'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.1'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.0';
+    implementation 'com.android.support:cardview-v7:26.1.+'
+    implementation 'com.android.support:recyclerview-v7:26.1.+'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.firebaseui:firebase-ui-database:6.0.2'
+    implementation 'com.firebaseui:firebase-ui-firestore:6.0.2'
+    implementation 'com.firebaseui:firebase-ui-auth:6.0.2'
+    implementation 'com.firebaseui:firebase-ui-storage:6.0.2'
+
+    testImplementation 'junit:junit:4.12'
 }
 
 

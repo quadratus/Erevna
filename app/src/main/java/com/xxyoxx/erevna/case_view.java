@@ -1,13 +1,11 @@
 package com.xxyoxx.erevna;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.AsyncTask;
+import android.os.Build;
 import android.os.StrictMode;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -52,6 +52,7 @@ public class case_view extends Activity {
     Button navi;
     InputStream is;
 
+    @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,14 +63,14 @@ public class case_view extends Activity {
 
         mCase_key = getIntent().getExtras().getString("case_id");
 
-        navi = (Button) findViewById(R.id.navigate);
-        mCaseImage = (ImageView) findViewById(R.id.ivc);
-        mCaseName = (TextView) findViewById(R.id.tvc1);
-        mCaseMail = (TextView) findViewById(R.id.tvc2);
-        mAddress = (TextView) findViewById(R.id.addressc);
-        mEmail = (TextView) findViewById(R.id.emailc);
-        mLat = (TextView) findViewById(R.id.latc);
-        mLon = (TextView) findViewById(R.id.longc);
+        navi = findViewById(R.id.navigate);
+        mCaseImage =  findViewById(R.id.ivc);
+        mCaseName =  findViewById(R.id.tvc1);
+        mCaseMail = findViewById(R.id.tvc2);
+        mAddress =  findViewById(R.id.addressc);
+        mEmail =  findViewById(R.id.emailc);
+        mLat =  findViewById(R.id.latc);
+        mLon = findViewById(R.id.longc);
 
         mDatabase.child(mCase_key).addValueEventListener(new ValueEventListener() {
             @Override

@@ -6,28 +6,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.location.Address;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.StrictMode;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.core.app.ActivityCompat;
+
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -37,14 +32,12 @@ import com.google.firebase.storage.UploadTask;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -52,8 +45,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import static android.R.id.list;
 
 public class upload extends Activity implements LocationListener {
 
@@ -100,14 +91,14 @@ public class upload extends Activity implements LocationListener {
         personList = new ArrayList<HashMap<String, String>>();
 
 
-        nm = (TextView) findViewById(R.id.namec);
-        addr = (TextView) findViewById(R.id.addressc);
-        mail = (TextView) findViewById(R.id.emailc);
-        iv = (ImageView) findViewById(R.id.imagev);
-        image = (Button) findViewById(R.id.selectimage);
-        location = (Button) findViewById(R.id.loc);
-        longitude = (TextView) findViewById(R.id.longc);
-        latitude = (TextView) findViewById(R.id.latc);
+        nm = findViewById(R.id.namec);
+        addr =  findViewById(R.id.addressc);
+        mail =  findViewById(R.id.emailc);
+        iv =  findViewById(R.id.imagev);
+        image = findViewById(R.id.selectimage);
+        location = findViewById(R.id.loc);
+        longitude = findViewById(R.id.longc);
+        latitude =  findViewById(R.id.latc);
 
 
         lm = (LocationManager) getSystemService(LOCATION_SERVICE);
@@ -253,7 +244,8 @@ public class upload extends Activity implements LocationListener {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
                     iv.setImageURI(path);
-                    Uri downloadUrl = taskSnapshot.getDownloadUrl();
+
+                    Task<Uri> downloadUrl = taskSnapshot.getStorage().getDownloadUrl();
                     DatabaseReference newList = mDatabase.push();
                     newList.child("Name").setValue(nm.getText());
                     newList.child("Address").setValue(addr.getText());

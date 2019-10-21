@@ -4,9 +4,7 @@ package com.xxyoxx.erevna;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Typeface;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -26,13 +24,14 @@ public class splash extends Activity {
                 String checkMail = sharedPr.getString("email",null);
 
                 if(checkMail != null && !checkMail.isEmpty()) {
-                    Intent mainIntent = new Intent(splash.this, userscreen.class);
+                    Intent mainIntent = new Intent( splash.this, userscreen.class);
                     splash.this.startActivity(mainIntent);
                     splash.this.finish();
                 }
                 else {
+                    Intent login_intent = new Intent(getApplicationContext(), login.class);
                     Intent el = new Intent("com.xxyoxx.erevna.login");
-                    startActivity(el);
+                    startActivity(login_intent);
                 }
             }
         }, SPLASH_DISPLAY_LENGTH);

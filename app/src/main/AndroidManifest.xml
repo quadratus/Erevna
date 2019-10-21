@@ -37,7 +37,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".login_two">
+        <activity android:name=".register_user">
             <intent-filter>
                 <action android:name="com.xxyoxx.erevna.login_two" />
 
