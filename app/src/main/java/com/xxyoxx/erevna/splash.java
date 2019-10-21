@@ -29,7 +29,7 @@ public class splash extends Activity {
                     splash.this.finish();
                 }
                 else {
-                    Intent login_intent = new Intent(getApplicationContext(), login.class);
+                    Intent login_intent = new Intent(splash.this, login.class);
                     Intent el = new Intent("com.xxyoxx.erevna.login");
                     startActivity(login_intent);
                 }

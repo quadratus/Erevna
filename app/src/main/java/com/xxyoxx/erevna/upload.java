@@ -67,6 +67,7 @@ public class upload extends Activity implements LocationListener {
     private static final String TAG_NAME = "name";
     private static final String TAG_ADD = "address";
 
+    Task<Uri> downloadUri;
     JSONArray peoples = null;
 
     ArrayList<HashMap<String, String>> personList;
@@ -77,7 +78,7 @@ public class upload extends Activity implements LocationListener {
     String uname;
 
     LocationManager lm;
-
+    // TODO: Fix map location fetch. Code should probably go into onProviderEnabled
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -147,7 +148,7 @@ public class upload extends Activity implements LocationListener {
 
         } catch (Exception fl) {
                     /*Toast.makeText(getApplicationContext(),"First Try error "+fl,Toast.LENGTH_LONG).show();*/
-            Log.e("Tatti", fl.toString());
+            Log.e("TRY$", fl.toString());
         }
                 /*// Depends on your web service
                 httppost.setHeader("Content-type", "application/json");*/
@@ -244,16 +245,10 @@ public class upload extends Activity implements LocationListener {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
                     iv.setImageURI(path);
+//TODO: Consider separating text data upload logic from image upload logic, text should be uploaded when
+//                    the user clicks upload, not when they select an image (Done, needs review)
+                    downloadUri= taskSnapshot.getStorage().getDownloadUrl();
 
-                    Task<Uri> downloadUrl = taskSnapshot.getStorage().getDownloadUrl();
-                    DatabaseReference newList = mDatabase.push();
-                    newList.child("Name").setValue(nm.getText());
-                    newList.child("Address").setValue(addr.getText());
-                    newList.child("Email").setValue(uname);
-                    newList.child("Image").setValue(downloadUrl.toString());
-                    newList.child("Lat").setValue(latitude.getText());
-                    newList.child("Lon").setValue(longitude.getText());
-                    Toast.makeText(getApplicationContext(), "Uploaded", Toast.LENGTH_LONG).show();
                 }
             });
             /*}*/
@@ -280,5 +275,16 @@ public class upload extends Activity implements LocationListener {
     @Override
     public void onProviderDisabled(String provider) {
 
+    }
+
+    public void upload_data(View view) {
+        DatabaseReference newList = mDatabase.push();
+        newList.child("Name").setValue(nm.getText());
+        newList.child("Address").setValue(addr.getText());
+        newList.child("Email").setValue(uname);
+        newList.child("Image").setValue(downloadUri.toString());
+        newList.child("Lat").setValue(latitude.getText());
+        newList.child("Lon").setValue(longitude.getText());
+        Toast.makeText(getApplicationContext(), "Uploaded", Toast.LENGTH_LONG).show();
     }
 }
