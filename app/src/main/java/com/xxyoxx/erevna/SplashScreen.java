@@ -1,18 +1,15 @@
 package com.xxyoxx.erevna;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Bundle;
-import android.widget.TextView;
 
-public class splash extends Activity {
+public class SplashScreen extends Activity  {
     private static int SPLASH_DISPLAY_LENGTH = 3000;
-    TextView t1 ;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
@@ -20,21 +17,20 @@ public class splash extends Activity {
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
+                //This is where the SharedPreferences are created for the first time
                 SharedPreferences sharedPr = getSharedPreferences("mypref",MODE_PRIVATE);
                 String checkMail = sharedPr.getString("email",null);
 
+                //Check if the SharePref are empty, if yes then start login activity otherwise start
+                //user screen activity
                 if(checkMail != null && !checkMail.isEmpty()) {
-                    Intent mainIntent = new Intent( splash.this, userscreen.class);
-                    splash.this.startActivity(mainIntent);
-                    splash.this.finish();
+                    startActivity(new Intent(SplashScreen.this,userscreen.class));
                 }
                 else {
-                    Intent login_intent = new Intent(splash.this, login.class);
-                    Intent el = new Intent("com.xxyoxx.erevna.login");
-                    startActivity(login_intent);
+                    startActivity(new Intent(SplashScreen.this,login.class));
                 }
             }
         }, SPLASH_DISPLAY_LENGTH);
-        
+//
     }
 }
