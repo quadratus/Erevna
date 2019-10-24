@@ -19,7 +19,7 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.xxyoxx.erevna",
-            "certificate_hash": "CEE6A5F38CAE0C0BF3AB674BBF7AF9AE39B59ED1"
+            "certificate_hash": "cee6a5f38cae0c0bf3ab674bbf7af9ae39b59ed1"
           }
         },
         {
@@ -33,20 +33,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "895606215002-mgb6m9ac8jcenvg7thgijl94076dn4pm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

@@ -6,8 +6,20 @@ import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Bundle;
 
+import com.firebase.ui.auth.AuthMethodPickerLayout;
+import com.firebase.ui.auth.AuthUI;
+import com.google.firebase.FirebaseApp;
+
+import java.util.Arrays;
+import java.util.List;
+
+//TODO: Implement authentication using Firebase
+//TODO: Implement MVP architecture
+//TODO: Write tests
+//TODO: Implement app wide constraint layout
 public class SplashScreen extends Activity  {
     private static int SPLASH_DISPLAY_LENGTH = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
@@ -25,8 +37,27 @@ public class SplashScreen extends Activity  {
                 //user screen activity
                 if(checkMail != null && !checkMail.isEmpty()) {
                     startActivity(new Intent(SplashScreen.this,userscreen.class));
-                }
-                else {
+                } else {
+//                    AuthMethodPickerLayout customLayout = new AuthMethodPickerLayout
+//                            .Builder(R.layout.activity_login_screen)
+//                            .setEmailButtonId(R.id.email_field)
+//                            .build();
+//
+//                    Intent login_intent = AuthUI.getInstance(FirebaseApp.initializeApp(SplashScreen.this))
+//                            .createSignInIntentBuilder()
+//                            .setAuthMethodPickerLayout(customLayout)
+//                            .build();
+//
+//                    List<AuthUI.IdpConfig> providers = Arrays.asList(
+//                            new AuthUI.IdpConfig.EmailBuilder().build()
+//                    );
+//                    startActivityForResult(
+//                            AuthUI.getInstance()
+//                                    .createSignInIntentBuilder()
+//                                    .setAvailableProviders(providers)
+//                                    .build(),
+//                            000);
+//                    startActivity(login_intent);
                     startActivity(new Intent(SplashScreen.this,login.class));
                 }
             }

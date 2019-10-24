@@ -75,22 +75,11 @@
             android:layout_marginTop="16dp"
             android:background="@color/gold"
             android:fontFamily="sans-serif-smallcaps"
-            android:onClick="sign_ind"
-            android:text="Sign in as individual"
+            android:onClick="loginFlow"
+            android:text="Sign in"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/sign_in_ngo"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:background="@color/gold"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="Sign in as an NGO"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textStyle="normal|bold" />
 
         <Button
             android:id="@+id/register"
