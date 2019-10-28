@@ -37,7 +37,7 @@ public class register_user extends Activity {
         super.onCreate(savedInstanceState);
         StrictMode.ThreadPolicy tp = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(tp);
-        setContentView(R.layout.activity_login_two);
+        setContentView(R.layout.activity_register_user);
 
         name = findViewById(R.id.name);
         password =  findViewById(R.id.pass);

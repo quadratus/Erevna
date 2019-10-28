@@ -11,81 +11,75 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="136dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginBottom="51dp"
+        android:layout_height="127dp"
         android:src="@drawable/ic_erevna"
         app:layout_constraintBottom_toTopOf="@+id/email_field"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_erevna" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/email_field"
-        android:layout_width="307dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginBottom="116dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textColor="@color/gold"
         android:textColorHint="@color/gold"
-        app:layout_constraintBottom_toTopOf="@+id/button_sign_ind"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/password_field"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/password_field"
-        android:layout_width="308dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="313dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="135dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/hint_password"
         android:inputType="textPassword"
         android:textColor="@color/gold"
         android:textColorHint="@color/gold"
-        app:layout_constraintBottom_toTopOf="@+id/register_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_sign_ind"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="274dp"
-        android:background="@color/gold"
-        android:text="Sign In"
-        android:onClick="signInFlow"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_sign_ind"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_field" />
 
-    <TextView
-        android:id="@+id/register_text"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/button_sign_ind"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="219dp"
-        android:text="Not yet registered? Register here"
-        android:textColor="@color/gold"
-        android:onClick="registerUser"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/gold"
+        android:onClick="signInFlow"
+        android:text="Sign In"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_field" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="forgotPassword"
+        android:text="Forgot password"
+        android:textColor="@color/gold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_ind" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
